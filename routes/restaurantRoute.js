@@ -157,8 +157,9 @@ router.get('/restaurant/:id', restaurantController.getRestaurantById);
  *       type: object
  *       properties:
  *         id:
- *           type: integer
- *           example: 1
+ *           type: string
+ *           format: uuid
+ *           example: "550e8400-e29b-41d4-a716-446655440000"
  *         name:
  *           type: string
  *           example: Sate Bandung Asli
@@ -168,11 +169,29 @@ router.get('/restaurant/:id', restaurantController.getRestaurantById);
  *         area:
  *           type: string
  *           example: Bandung
+ *         address:
+ *           type: string
+ *           example: Jl. Setiabudi No.137, Kota Bandung
  *         price_range:
  *           type: number
  *           example: 35000
+ *         open_time:
+ *           type: string
+ *           format: time
+ *           example: "10:00:00"
+ *         close_time:
+ *           type: string
+ *           format: time
+ *           example: "20:00:00"
+ *         is_smoking_allowed:
+ *           type: boolean
+ *           example: false
+ *         is_halal:
+ *           type: boolean
+ *           example: true
  *         rating:
  *           type: number
+ *           format: float
  *           example: 4.5
  */
 
