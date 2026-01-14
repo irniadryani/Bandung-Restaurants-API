@@ -72,9 +72,6 @@ Thumbs.db
 # Output of 'npm pack'
 *.tgz
 
-# dotenv environment variable files
-.env*
-
 # Sequelize CLI
 .sequelizerc
 
